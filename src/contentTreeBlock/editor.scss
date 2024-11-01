@@ -1,0 +1,41 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-gj-web-maps-for-wp  {
+  background: #fff;
+  color: $black;
+  margin: 0 auto;
+}
+
+.wp-block-gj-web-maps-for-wp-content-tree-finished, .wp-block-gj-web-maps-for-wp-finished  {
+  background: $lightblue !important;
+}
+
+.wp-block-gj-web-maps-for-wp-wp4wpButton {
+  font: 400 13.3333px Arial;
+  height: 33px;
+  padding: 0px 12px;
+  margin: 0 12px 0 3px;
+}
+
+.warning {
+  line-height: normal;
+  font-size: 18px;
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.errorMessage {
+  line-height: normal;
+  font-size: 18px;
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+

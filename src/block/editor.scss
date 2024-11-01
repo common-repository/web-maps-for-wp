@@ -1,0 +1,32 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-gj-web-maps-for-wp  {
+  background: #fff;
+  color: $black;
+  margin: 0 auto;
+}
+
+.wp-block-gj-web-maps-for-wp-finished {
+  background: $lightblue !important;
+}
+
+.wp-block-gj-web-maps-for-wp-wp4wpButton {
+  font: 400 13.3333px Arial;
+  height: 33px;
+  padding: 0px 12px;
+  margin: 0 12px 0 3px;
+}
+
+
+.dijitTextBox {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+}

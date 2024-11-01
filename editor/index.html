@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Web Maps for Wordpress Shortcode Maker</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel='stylesheet'  href='css/agolForWPStyle.css' type='text/css' media='all' />
+  <link rel='stylesheet'  href='css/jquery-ui.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='agol_for_wp_esri_style-css'  href='https://js.arcgis.com/4.6/esri/css/main.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='agol_for_wp_esri_claro_style-css'  href='https://js.arcgis.com/3.28/dijit/themes/claro/claro.css?ver=5.1.1' type='text/css' media='all' />
+  <script type="text/javascript">
+    dojoConfig = {
+      parseOnLoad : true,
+      afterOnLoad : true
+    }
+    var AGOLFglobaldir = "' . plugins_url('/js/gj/', __FILE__) . '";
+  </script>
+<script type='text/javascript' src='https://js.arcgis.com/4.6/init.js'></script>
+<script type='text/javascript' src='js/addMap.js'></script>
+
+
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="overlaybox"><h1>Your Web Map Shortcode</h1>
+<div id="messageText"><p>Copy and paste this into your Wordpress page that is using the WebMaps for Wordpress:</p></div>
+<textarea id="shortcodeTextarea"></textarea>
+<div style="text-align:center"><button id="copyClipboard">Copy to Clipboard</button> <button id="closeOverlayButton">Close</button></div>
+        </div>
+      </div>
+
+    <div id='agol_for_WP_insert_map_popup_container' style='margin: auto; max-width: 900px;'>
+
+        <div id='agol_for_WP_insert_map_popup_right_container'>
+          <div id='agol_for_WP_insert_map_popup_insert_view'>
+            <div id='agol_for_WP_insert_map_popup_map_insert_type_container' style = "margin-bottom: 5px; display: none">
+              <strong>Search ArcGIS Online</strong>
+            </div>
+            <div id = "agol_for_WP_insert_map_popup_map_selected_url" style = "display:none"></div>
+            <div id="agol_for_WP_insert_map_popup_map_insert_search_field" style = "display: none">
+              <span>Title/Tag:</span>
+              <input id='agol_for_WP_add_map_agol_search_input' class = 'wm4wpDropdown' style = "width: 135px; height: 30px" type='text'/>
+            </div>
+            <div id="agol_for_WP_insert_map_popup_map_insert_search_content_type" style = "display: none">
+              <span style = "margin-right: 5px">Type:</span>
+              <select id = "agol_for_WP_insert_map_popup_map_content_type_select" class = "wm4wpDropdown" style = "width: 150px; margin-right: 5px">
+                <option value = "Web Map">Web Map</option>
+                <option value = "Web Mapping Application">Web Application</option>
+                <option value = "Dashboard">Dashboard</option>
+                <option value = "StoryMap">Story Map</option>
+              </select>
+            </div>
+            <div id='agol_for_WP_insert_map_popup_map_owner_filter_container' style = 'display: none; margin-top: 12px'>
+              <span style = "margin-right: 5px"> Owner:</span>
+            </div>
+            <button id='agol_for_WP_add_map_agol_search_button' style = "display: none">Search</button>
+            <div id = "agol_for_WP_insert_map_popup_map_insert_content_container_no_results" style = "display: none; text-align: center; margin-top: 25px">No results matched your search.</div>
+            <div id="agol_for_WP_insert_map_popup_map_insert_content_container"></div>
+            <div id="agol_for_WP_preview_container" class="agolHidden"  style="max-width:800px">
+              <div id="agol_for_WP_insert_map_popup_map_insert_preview"></div>
+              <div id="agol_for_WP_preview_map" class="agolHidden"></div>
+              <div id="agol_for_WP_insert_tabs_container"></div>
+              <div id="agol_for_WP_insert_map_popup_map_insert_advanced"></div>
+            </div>
+          </div>
+          <div id='agol_for_WP_insert_map_popup_create_view' style='display: none;'>
+            <h2>Create a Map</h2>
+            <a href="https://www.geo-jobe.com/wp/web-maps-for-wordpress-pro-plugin/" target="_blank"><img src="https://cdn.geopowered.com/Applications/WordPressPlugins/AGOL/Free/info/VersionChart400x487.png" alt="Plugin version comparison" /></a>
+          </div>
+        </div>
+      </div>
+
+<script type="text/javascript">
+  var containers = document.getElementsByClassName("insert_map_iframe_container");
+  var url_rand = Math.floor((Math.random()*10)+1);
+  var base_img_url = "https://cdn.geopowered.com/Applications/WordPressPlugins/AGOL/Free/logos/";
+  var target_img = "service-logo-"+url_rand+".png";
+  for (var i = 0; i < containers.length; i++) {
+    var thisContainer = containers[i];
+    thisContainer.innerHTML = thisContainer.innerHTML + "<div><img src='" + base_img_url + target_img + "' /></div>";
+  }
+</script>
+
+</body>
+</html>

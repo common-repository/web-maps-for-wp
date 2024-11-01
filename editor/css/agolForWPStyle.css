@@ -1,0 +1,455 @@
+/*********************************************
+ *
+ *  Media Insert Map
+ *
+ *********************************************/
+body {
+	font-family: "Avenir Next W01","Avenir Next W00","Avenir Next","Avenir","Helvetica Neue",sans-serif;
+}
+#TB_title{
+	height: 6%;
+	font-weight: bold;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+#TB_ajaxContent{
+	padding: 0px;
+	width: 100% !important;
+	height: 94% !important;
+	overflow: hidden;
+}
+.wp-media-buttons .add_map span.wp-media-buttons-icon:before {
+	font: normal 18px/1 dashicons;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  content: "\f319";
+}
+
+#agol_for_WP_insert_map_popup_left_container{
+	width: 30%;
+	height: 100%;
+	float:left;
+	position:absolute;
+}
+
+#agol_for_WP_insert_map_popup_left_container_list{
+	padding-left: 20px;
+}
+
+#agol_for_WP_insert_map_popup_left_container a{
+	font-size: 16px;
+	display: block;
+	line-height: 22px;
+	padding-top: 12px;
+	cursor: pointer;
+}
+
+#agol_for_WP_insert_map_popup_left_container hr{
+	width: 80%;
+	margin-top: 10px;
+}
+
+#agol_for_WP_insert_map_popup_right_container{
+	height: 100%;
+}
+
+#agol_for_WP_insert_map_popup_right_container h3 {
+	word-wrap: break-word;
+}
+
+#agol_for_WP_insert_map_popup_map_insert_type_container a{
+	cursor: pointer;
+}
+
+#agol_for_WP_insert_map_popup_map_insert_type_container a:last-child{
+	padding-left: 10px;
+}
+
+#agol_for_WP_insert_map_popup_map_insert_content_container{
+	padding-top: 15px;
+	width: 99%;
+}
+
+#agolforwp_preview_top_left {
+	width: 250px;
+	float: left;
+	overflow: hidden;
+}
+
+#agolforwp_preview_top_left img {
+	border: 1px solid #ddd;
+	margin: 20px 20px 0px 20px;
+}
+
+#agolforwp_preview_top_left h4{
+	margin-top: 5px;
+	text-align: center;
+}
+
+#agolforwp_preview_top_right {
+	width: 240px;
+	float: left;
+	clear: none;
+}
+
+#agol_for_wp_insert_map_buttons {
+	text-align: center;
+	clear: left;
+	width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+#agolforwp_preview_bottom {
+	overflow: hidden;
+	clear: left;
+}
+
+#agol_for_wp_insert_Map_Preview_Title {
+	float: left;
+	clear: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#agolforwp_preview_bottom iframe {
+	border: 1px solid #ddd;
+}
+
+.agolforwp_insert_map_preview_top_row_container{
+	height: 175px;
+}
+
+#agolforwp_advanced_view_options fieldset {
+	margin-bottom: 1em;
+}
+
+#agolforwp_advanced_view_options_size_fieldset {
+	overflow: auto;
+}
+
+#agolforwp_advanced_view_options_size_fieldset legend {
+	float: left;
+	clear: left;
+	color: #888;
+}
+
+#agolforwp_advanced_view_options_size_fieldset label,
+#agolforwp_advanced_view_options_size_fieldset .agol_radio,
+#agolforwp_advanced_view_options_size_fieldset .agol_text {
+	float: none;
+}
+
+#agolforwp_advanced_view_options_size_fieldset label {
+	padding-left: 5px;
+}
+
+.agol_subfield {
+	width: 85% !important;
+	margin: 0 !important;
+}
+
+.agol_subfield label {
+	width: 40px;
+}
+
+.agol_clear_l {
+	clear: left;
+}
+
+#agolforwp_advanced_view_options_size_fieldset .agol_text {
+	width: 40px;
+  height: 16px;
+}
+
+#agolforwp_advanced_view_options_tools_fieldset div {
+	float: left;
+	width: 33%;
+}
+
+#agolforwp_advanced_view_options_tools_fieldset label {
+	margin-left: 5px;
+}
+
+.agolforwp_advanced_view_button_container{
+	text-align: center;
+}
+
+/*********************************************
+ *  Media Insert Map Picker
+ *********************************************/
+
+ .agol_insert_map_align_left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.agol_insert_map_align_center {
+	width: 100% !important;
+	text-align: center;
+}
+
+.agol_insert_map_align_right {
+	float: right;
+	margin-left: 10px;
+}
+
+a.agol_for_wp_view_larger_map {
+  font-size: 15px;
+  background-color: #205081;
+  color: #FFF;
+  padding: 5px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: none;
+  margin-top: 5px;
+  display: inline-block;
+}
+a.agol_for_wp_view_larger_map:hover {
+  background-color: #275788;
+  color: #FFF;
+  box-shadow: none;
+}
+a.agol_for_wp_view_larger_map:focus {
+  color: #FFF;
+  box-shadow: none;
+}
+.insert_map_iframe_container iframe {
+	clear: both;
+	margin-bottom: -8px;
+}
+
+.insert_map_iframe_container small {
+	display: block;
+	text-align: center;
+	float: left;
+	clear: left;
+}
+
+.insert_map_iframe_container div {
+	clear: none;
+	text-align: center !important;
+}
+
+.insert_map_iframe_container p {
+	margin: 0;
+}
+
+.agol_for_wp_insert_map_picker_item_container{
+	float: left;
+	width: 212px;
+	height: 200px;
+	padding-bottom: 15px;
+	border: 1px solid darkgray;
+	text-align: center;
+	cursor: pointer;
+  margin-left: -1px;
+  margin-bottom: -1px
+}
+
+.agol_for_wp_insert_map_picker_item_container img{
+	padding-top: 10px;
+}
+
+.agol_for_wp_insert_map_picker_item_container h3{
+	margin-top: 5px;
+	text-align: center;
+}
+
+#agol_for_wp_insert_map_picker_items_container{
+	height: 100%;
+}
+
+#agol_for_wp_insert_map_picker_items_container h3 {
+	line-height: 1em;
+	font-size: 1.15em;
+}
+
+
+#agol_for_WP_insert_map_popup_map_insert_content_container #loader {
+	margin: 0 auto !important;
+	text-align: center;
+}
+
+#agol_for_WP_preview_map {
+	width:400px;
+	height:300px;
+	border: 1px solid #ddd;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+.agolHidden {
+	display: none !important;
+}
+
+.agolAdvancedFields {
+	margin: 5px 0;
+}
+
+.agol2Column {
+	float: left;
+	width: 50%;
+}
+
+.agol3Column {
+	float: left;
+	width: 33%;
+	line-height: 32px;
+}
+
+.agolRow {
+	margin: 12px 0;
+}
+
+.agolRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.agolExtentDiv {
+	float: left;
+	width:75%;
+	margin-bottom: 12px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+	height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.is-active {
+	display: inherit !important;
+}
+
+#overlaybox{
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	max-height: 400px;
+	padding: 0px 25px 25px 25px;
+	background: #fff;
+  color: #000;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#closeOverlayButton {
+	cursor: pointer;
+}
+
+#shortcodeTextarea {
+	width:98%;height:150px;border: 3px solid #cccccc;padding:5px;
+}
+
+#insert_map_preview_cancel_btn, #insert_map_preview_confirm_btn {
+	height: 33px;
+	padding: 0px 12px;
+	margin: 0 12px 0 3px;
+}
+
+#insert_map_preview_cancel_btn:hover {
+	background: #0085ba;
+  color: white;
+}
+
+#insert_map_preview_cancel_btn {
+  background: white;
+    color: #0085ba;
+    border: 1px solid #0085ba;
+    cursor: pointer
+}
+
+#insert_map_preview_confirm_btn {
+	background: #0085ba;
+	color: #fff;
+	border-radius: 2px;
+  border: none;
+  cursor: pointer
+}
+
+#insert_map_preview_confirm_btn:hover {
+	background: #00648c;
+}
+
+
+input.dijitReset.dijitInputField.dijitArrowButtonInner{
+	text-indent: inherit !important;
+	width: 16px;
+	font-size: 12px;
+	height: 19px !important;
+	margin-left: 2px;
+   }
+
+.wm4wpDropdown {
+  align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+    height: 38px;
+    color: #413d3d;
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.wm4wpDropdown:focus-visible {
+  border: 2px solid #2684FF;
+  outline: #2684FF;
+}
+
+#agol_for_WP_add_map_agol_search_button {
+	background: #0085ba;
+	color: #fff;
+	border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 36px;
+  padding: 10px;
+  width: 75px;
+  font-size: 16px;
+}
+
+#agol_for_WP_add_map_agol_search_button:hover {
+	background: #00648c;
+}
+
+.dijitTextBox {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#widget_ownerSelect input {
+  height: 36px !important;
+  padding-left: 5px !important;
+
+}
+
+.dijitArrowButtonContainer{
+  border: 1px solid #d8d1d1
+}
+
+.dijitSpinner .dijitSpinnerButtonContainer, .dijitComboBox .dijitArrowButtonContainer{
+  border: 1px solid #d8d1d1
+}

@@ -1,0 +1,88 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-gj-web-maps-for-wp
+{
+  color: $black;
+  margin: 0 auto;
+}
+
+.wp-block-gj-web-maps-for-wp .insert_map_iframe_container-center {
+  text-align: center;
+}
+
+.wp-block-gj-web-maps-for-wp .insert_map_iframe_container-left {
+  text-align: left;
+}
+
+.wp-block-gj-web-maps-for-wp .insert_map_iframe_container-right {
+  text-align: right;
+}
+
+.wp-block-gj-web-maps-for-wp a.agol_for_wp_view_larger_map {
+  font-size: 13px;
+  text-decoration: none !important;
+  background-color: #205081;
+  color: #FFF;
+  padding: 5px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: none;
+  margin-top: 5px;
+  display: inline-block;
+}
+.wp-block-gj-web-maps-for-wp a.agol_for_wp_view_larger_map:hover {
+  background-color: #275788;
+  text-decoration: none;
+  color: #FFF;
+  box-shadow: none;
+}
+.wp-block-gj-web-maps-for-wp a.agol_for_wp_view_larger_map:focus {
+  color: #FFF;
+  text-decoration: none;
+  box-shadow: none;
+}
+.insert_map_iframe_container iframe {
+  clear: both;
+	margin-bottom: -8px;
+}
+
+.replaceEdit {
+  font-size: 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: #0085ba;
+    padding: 7px;
+    border-radius: 2px;
+    right: 11%;
+    width: 25%;
+    margin: 10px;
+}
+
+.replaceEditClear {
+  font-size: 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 7px;
+    border-radius: 2px;
+    right: 11%;
+    width: 25%;
+    margin: 10px;
+    background: white;
+    color: #0085ba;
+    border: 1px solid #0085ba;
+    cursor: pointer;
+}
+
+.replaceEdit:hover {
+	background: #00648c;
+}
+
+.replaceEditClear:hover {
+  color: white;
+  background: #0085ba;
+}
